@@ -142,10 +142,8 @@ class _LoginState extends State<Login> {
                                     const EdgeInsets.symmetric(vertical: 20),
                               ),
                               onPressed: () async {
-                                // await postLogin(emailController.text,
-                                //         passwordController.text)
-
-                                await postLogin("adan@bsi.ac.id", "secret")
+                                await postLogin(emailController.text,
+                                        passwordController.text)
                                     .then((value) => {
                                           if (value.data != null)
                                             {
